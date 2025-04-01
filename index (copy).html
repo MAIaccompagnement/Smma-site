@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M.I.A</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">M.I.A</div>
+            <div class="nav-links">
+                <a href="#about">À PROPOS</a>
+                <a href="#services">SERVICES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>M.I.A</h1>
+            <p>Agence de communication digitale</p>
+        </section>
+
+        <section id="about" class="about">
+            <h2>À PROPOS</h2>
+            <p>Une agence créative spécialisée dans la communication digitale</p>
+        </section>
+
+        <section id="services" class="services">
+            <h2>NOS SERVICES</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Stratégie Digitale</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Web Design</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Social Media</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="comments" class="comments">
+            <h2>COMMENTAIRES</h2>
+            <div class="comments-container">
+                <form id="comment-form">
+                    <textarea placeholder="Votre commentaire"></textarea>
+                    <button type="submit">PUBLIER</button>
+                </form>
+                <div id="comments-list"></div>
+            </div>
+        </section>
+
+        <section id="account" class="account">
+            <h2>MON COMPTE</h2>
+            <div class="account-container">
+                <form id="login-form">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Mot de passe" required>
+                    <button type="submit">SE CONNECTER</button>
+                </form>
+                <p class="account-switch">Pas encore de compte ? <a href="#" id="register-switch">S'inscrire</a></p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>CONTACT</h2>
+            <form>
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">ENVOYER</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 M.I.A</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
