@@ -73,6 +73,17 @@ section {
     color: white; /* Texte en blanc pour une meilleure lisibilité */
 }
 
+.section-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Noir avec 50% d'opacité */
+    z-index: 1;
+}
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
