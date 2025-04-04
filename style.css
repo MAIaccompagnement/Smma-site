@@ -58,6 +58,18 @@ section {
     padding: 5rem 10%;
 }
 
+.section-background {
+    width: 100%; /* Prend toute la */
+    background-image: url('copo.jpg'); /* Remplace par le chemin de ton image */
+    background-size: cover; /* L'image s'ajuste pour couvrir la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    display: flex; /* Permet d'ajouter du contenu centré */
+    align-items: center;
+    justify-content: center;
+    color: white; /* Texte en blanc pour une meilleure lisibilité */
+}
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
