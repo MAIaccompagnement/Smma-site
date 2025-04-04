@@ -90,12 +90,7 @@ section {
     background-size: cover; /* L'image s'ajuste pour couvrir la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Empêche la répétition */
-    display: flex; /* Permet d'ajouter du contenu centré */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     height: 100vh;
-    flex-direction: column;
     color: white; /* Texte en blanc pour une meilleure lisibilité */
 }
 
