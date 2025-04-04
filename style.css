@@ -67,6 +67,9 @@ section {
     display: flex; /* Permet d'ajouter du contenu centré */
     align-items: center;
     justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
     color: white; /* Texte en blanc pour une meilleure lisibilité */
 }
 
