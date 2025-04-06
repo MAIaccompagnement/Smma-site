@@ -72,6 +72,35 @@
                 <button type="submit">ENVOYER</button>
                         </form>
         </section>
+        <section id="temoignages">
+  <h2>Témoignages</h2>
+  <div id="liste-temoignages">Chargement…</div>
+</section>
+
+<script>
+  fetch("https://docs.google.com/spreadsheets/d/1rP0uQ61U-TL03KLZAlMjnbuRLW93kRLcQ2LMZVqpOEc/gviz/tq?tqx=out:json")
+    .then(res => res.text())
+    .then(data => {
+      const json = JSON.parse(data.substr(47).slice(0, -2));
+      const rows = json.table.rows;
+
+      const container = document.getElementById("liste-temoignages");
+      container.innerHTML = "";
+
+      rows.forEach((row, index) => {
+        // Sauter l'en-tête si besoin
+        if (index === 0 && row.c[1].v === "Nom") return;
+
+        const nom = row.c[1]?.v || "Anonyme";
+        const message = row.c[2]?.v || "";
+
+        const div = document.createElement("div");
+        div.className = "temoignage";
+        div.innerHTML = `<strong>${nom}</strong><p>${message}</p>`;
+        container.appendChild(div);
+      });
+    });
+</script>
     </main>
 
     <footer>
