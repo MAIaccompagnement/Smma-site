@@ -218,6 +218,17 @@ footer {
     padding: 2rem;
     background: #111;
 }
+.temoignage {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.temoignage strong {
+  color: #333;
+  font-size: 1.1em;
+}
 
 @media (max-width: 768px) {
     nav {
