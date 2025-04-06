@@ -87,7 +87,6 @@ section {
     height: 100vh;
     flex-direction: column;
     color: white; /* Texte en blanc pour une meilleure lisibilité */
-    font-size: 2vw;
 }
 .section-background2 {
     width: 100%; /* Prend toute la */
@@ -102,7 +101,6 @@ section {
     height: 100vh;
     flex-direction: column;
     color: white; /* Texte en blanc pour une meilleure lisibilité */
-    font-size: 2vw;
 }
 
 .section-background::before {
