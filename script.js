@@ -100,3 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+function handleCredentialResponse(response) {
+  // Décodez le jeton JWT pour obtenir les informations de l'utilisateur
+  const responsePayload = decodeJwtResponse(response.credential);
+
+  console.log("ID utilisateur Google : " + responsePayload.sub);
+  console.log("Nom complet : " + responsePayload.name);
+  console.log("Adresse e-mail : " + responsePayload.email);
+  // Envoyez ces informations à votre serveur pour créer une session ou un compte utilisateur
+}
