@@ -57,49 +57,30 @@ section {
     padding: 5rem 10%;
 }
 
-.section-background {
-    width: 100%; /* Prend toute la */
-    background-image: url('copo.jpg'); /* Remplace par le chemin de ton image */
-    background-size: cover; /* L'image s'ajuste pour couvrir la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition */
-    display: flex; /* Permet d'ajouter du contenu centré */
+.section-background, .section-background1, .section-background2 {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100vh;
     flex-direction: column;
-    color: white; /* Texte en blanc pour une meilleure lisibilité */
-    font-size: 2vw;
+    color: white;
+}
+
+.section-background {
+    background-image: url('copo.jpg');
 }
 
 .section-background1 {
-    width: 100%; /* Prend toute la */
-    background-image: url('20250406_123826.jpg'); /* Remplace par le chemin de ton image */
-    background-size: cover; /* L'image s'ajuste pour couvrir la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition */
-    display: flex; /* Permet d'ajouter du contenu centré */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    flex-direction: column;
-    color: white; /* Texte en blanc pour une meilleure lisibilité */
+    background-image: url('20250406_123826.jpg');
 }
+
 .section-background2 {
-    width: 100%; /* Prend toute la */
-    background-image: url('20250406_112750.jpg'); /* Remplace par le chemin de ton image */
-    background-size: cover; /* L'image s'ajuste pour couvrir la section */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition */
-    display: flex; /* Permet d'ajouter du contenu centré */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    flex-direction: column;
-    color: white; /* Texte en blanc pour une meilleure lisibilité */
+    background-image: url('20250406_112750.jpg');
 }
 
 .section-background::before {
@@ -109,7 +90,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Noir avec 50% d'opacité */
+    background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -135,6 +116,14 @@ h2 {
 
 .service-item:hover {
     transform: translateY(-10px);
+}
+
+/* Style correctif pour les liens dans service-item */
+.service-item a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
 }
 
 .contact form {
@@ -217,6 +206,7 @@ footer {
     padding: 2rem;
     background: #111;
 }
+
 .temoignage {
   background-color: #f9f9f9;
   padding: 15px;
